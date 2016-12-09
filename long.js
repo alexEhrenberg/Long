@@ -5,7 +5,6 @@ function Long (n) {
   var num;    // array
   var sign;   // sign
 
-
   if(n === undefined) {
     this.num = new Array();
     this.num.push('.');
@@ -34,7 +33,6 @@ function Long (n) {
     */
 
     var regexObj = /^[+-]?(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?$/i;    
-
 
     if(regexObj.test(n)) {
       var stringArray = n.split("");
