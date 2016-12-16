@@ -683,7 +683,7 @@ Long.prototype.root = function(r, p) {
   var i = 0;
   while(delta.compare(error) != -1) {
 
-    var a = this.div(soln.pow(root.sub(1)), p * i);
+    var a = this.div(soln.pow(root.sub(1)), Math.pow(2, i));
     var delta = nInverse.mult(a.sub(soln));
  
     soln = soln.add(delta);
